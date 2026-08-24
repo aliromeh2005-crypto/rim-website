@@ -1,0 +1,53 @@
+.drawing-controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-group label {
+  font-weight: bold;
+  color: var(--primary-pink);
+}
+
+.dark-mode .control-group label {
+  color: var(--light-pink);
+}
+
+.color-picker {
+  width: 60px;
+  height: 40px;
+  border: 2px solid var(--primary-pink);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.brush-slider {
+  width: 150px;
+  cursor: pointer;
+}
+
+.drawing-canvas {
+  border: 3px solid var(--primary-pink);
+  border-radius: 15px;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  cursor: crosshair;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+}
+
+.dark-mode .drawing-canvas {
+  background: #2a2a3e;
+  border-color: var(--light-pink);
+}
