@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-pink: #ff1493;
+  --light-pink: #ffb6d9;
+  --dark-pink: #c71585;
+  --soft-pink: #ffc0cb;
+  --accent-purple: #9d4edd;
+  --accent-blue: #3a86ff;
+  --light-bg: #fff5f8;
+  --dark-bg: #1a1a2e;
+  --light-text: #2d3436;
+  --dark-text: #f0f0f0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
